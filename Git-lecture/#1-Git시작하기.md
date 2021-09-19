@@ -38,7 +38,7 @@
 - git clone "github-remote-url" // GitHub에 만든 repo와 클론하기
 - git pull : 서버의 최신 소스를 다운받기
 - touch aaa.txt
-- git add --all`q hk1`
+- git add --all
 - git commit -am “message”
 - git push
 
