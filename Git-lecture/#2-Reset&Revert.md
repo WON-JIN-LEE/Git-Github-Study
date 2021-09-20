@@ -2,10 +2,6 @@
 
 ## reset & revert & Source History 명령어
 
-### Source History
-
-- git log --graph --oneline
-
 ### git reset: 커밋 취소하기
 
 - git reset --[hard...] <revision번호>를 사용하면 현재 작업 위치인 HEAD의 포인터를 revision번호에 해당하는 위치로 변경해버릴 수 있습니다.
@@ -30,6 +26,14 @@
 - 아래사진에서 스크랩되어 있는 부분에 각 Log 마다 revision번호가 표시됩니다.
 
 ![](../img/revision.PNG)
+
+### Source History
+
+- commit log를 그래프로 볼 수 있고, revision 번호도 확인할 수 있습니다.
+
+```
+git log --graph --oneline
+```
 
 ---
 
