@@ -22,7 +22,7 @@
 - git add <file명> 또는 git add .
 - git commit -m "first commit message"
 - git remote add origin <git-remote-url>
-- git push -u origin master
+- git push -u origin master // -u: 현재 브랜치를 자동으로 서버 master 브랜치로 연결해 간단히 git push, git pull만 입력해도 명령어를 반영한다.
 - git push -fu origin master //충돌이 나도 무시하고 보낸다. -fu
 - git log
 - git status # staging 상태 확인

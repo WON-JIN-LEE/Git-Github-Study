@@ -9,7 +9,7 @@
 - (주의) hard는 시계(모든것)를 되돌립니다.
 
 ```
-- git reset --[hard | soft | mixed] <revision번호>
+git reset --[hard | soft | mixed] <revision번호>
 ```
 
 ### git revert: 커밋 내용 되돌리기
