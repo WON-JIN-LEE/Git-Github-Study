@@ -1,4 +1,3 @@
-
 # Git 실무 - with VSCode
 ## Git Branch 
     1. Master 브랜치는 항상 Deploy할 수 있는 상태로 두자!
@@ -66,6 +65,9 @@ $> git reset --hard <tag>
 # reset과 비슷하지만 되돌린 버전 이후의 버전들의 히스토리가 삭제되지 않고 새로운 log가 추가됩니다.
 $> git revert <revision-hash-id>
 $> git revert <revision-hash-id> -- <path>
+
+#서버 브랜치와 로컬 브랜치 업데이트
+$> git remote update --prune
 
 ```
 
