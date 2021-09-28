@@ -1,3 +1,7 @@
-# Git & Github
+release 0.1.0 start
 
-study Git and Github by git lecture
+deploy dev server
+
+QA
+
+bug fixed
