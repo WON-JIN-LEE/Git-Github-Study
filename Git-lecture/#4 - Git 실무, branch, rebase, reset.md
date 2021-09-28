@@ -66,6 +66,9 @@ $> git reset --hard <tag>
 $> git revert <revision-hash-id>
 $> git revert <revision-hash-id> -- <path>
 
+#서버 브랜치와 로컬 브랜치 업데이트
+$> git remote update --prune
+
 ```
 
 ## Git Rebase & Reset/Revert/Tag
