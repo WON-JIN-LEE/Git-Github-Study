@@ -1,33 +1,44 @@
 # Git Flow
-## Git Flow ConcePts
-기본 브랜치 
-- Master : 항상서비스가능한 소스코드
-- Develop: 개발에 주축이되는 브랜치
-
-기능을 개발할때
-- Feature/
-
-배포를 할때
-- Release/
-
-긴급 버그를 수정하고 싶을때
-- Hotfix/
+## Git Flow 란?
+Git-flow에는 5가지 종류의 브랜치가 존재합니다.
+- master : 항상 서비스가능한 소스코드 가진 브랜치
+- develop : 개발에 주축이되는 브랜치
+- feature/ : 기능을 개발하는 브랜치
+- release/ : 이번 출시 버전을 준비하는 브랜치
+- hotfix/ : 출시 버전(master)에서 발생한 버그를 수정하는 브랜치
 
 ## Git Flow Commands
 ```
+# 깃플로우 생성
 $> git flow init
+
+# 원격 저장소에 모든 브랜치를 전송하였다. 
 $> git push origin --all
+
+# feature branch를 생성
 $> git flow feature start <feature-branch>
+
+# 현재 feature branch 목록들을 살펴볼 수가 있다.
 $> git flow feature list
+
 $> git add .
 $> git commit -m
-# push & pull-request(to review)
+
+# push & pull-request(to review) 후 해당 브랜치 작업이 완료되었을 때 finish로 완료한다.
 $> git flow feature finish <feature-branch>
+
 $ other-feature> git merge --no-ff develop
+
+# 릴리즈 생성과 완료(merge)
 $> git flow release start <tag>
 $> git flow release finish <tag>
+
 $> git tag
+
+# 서버의 모든 브랜치와 태그까지 push
 $> git push origin --all --follow-tags
+
+# hotfix 생성과 완료(merge)
 $> git flow hotfix start <tag>
 $> git flow hotfix finish <tag>
 ```
